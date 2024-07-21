@@ -15,7 +15,7 @@
                 <ul>
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Orders</a></li>
-                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="#">Menu</a></li>
                     <li><a href="#">Reservations</a></li>
                     <li><a href="#">Customers</a></li>
                     <li><a href="#">Reports</a></li>
@@ -32,10 +32,13 @@
                 <div class="card">
                     <h3>Orders</h3>
                     <p>View and manage recent orders.</p>
+                    <a href="#" onclick="view1()">View Orders</a>
                 </div>
                 <div class="card">
                     <h3>Menu</h3>
                     <p>Manage menu items and categories.</p>
+                    <a href="#" onclick="view2()">View Menu</a>
+
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add item in Menu</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -81,21 +84,31 @@
                 <div class="card">
                     <h3>Reservations</h3>
                     <p>View and manage table reservations.</p>
+                    <a href="#" onclick="view3()">View Reservations</a>
                 </div>
                 <div class="card">
                     <h3>Customers</h3>
                     <p>View customer details and history.</p>
+                    <a href="#" onclick="view4()">View Customers</a>
                 </div>
                 <div class="card">
                     <h3>Reports</h3>
                     <p>Generate and view sales reports.</p>
+                    <a href="#" onclick="view5()">View Reports</a>
                 </div>
               </section>
-              <div id="menu" class="row">
-                <h3>Menu</h3>
-                <div id="menu-objects">
+              <div id="callingdiv" class="row">
+                <div class="hide" style="display: none;"><h1>order</h1></div>
+                <div class="hide" style="display: none;"><h1>Menu</h1>
+                  <div id="menu-objects" class="row">
                   
+                  </div> 
                 </div>
+                <div class="hide" style="display: none;"><h1>reservations</h1></div>
+                <div class="hide" style="display: none;"><h1>Customers</h1></div>
+                <div class="hide" style="display: none;"><h1>view Reports</h1></div>
+            
+               
       
               </div>
         </main>
